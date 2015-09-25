@@ -28,32 +28,33 @@ $("#commentForm").validate();
    <legend>A simple comment form with submit validation and default messages</legend>
    <p>
      <label for="cfname">First Name</label>
-     <em>*</em><input id="cfname" name="fname" size="25"/>
-    </p>
+     <em>*</em><input id="cfname" name="fname" size="25" class="required"
+     minlength="2" />
+</p>
    <p>
    <p>
      <label for="clname">Last Name</label>
-     <em>*</em><input id="clname" name="lname" size="25" />
+     <em>*</em><input id="clname" name="lname" size="25" class="required" minlength="2" />
     </p>
    <p>
      <label for="cemail">E-Mail</label>
-     <em>*</em><input id="cemail" name="email" size="25" />
+     <em>*</em><input id="cemail" name="email" size="25" class="required email"/>
    </p>
    <p>
      <label for="curl">URL of Your Web Site</label>
-     <em>  </em><input id="curl" name="url" size="25" />
+     <em>  </em><input id="curl" name="url" size="25" class="url" value=""/>
    </p>
    <p>
      <label for="cnumber">Years Your Site Has Been in Business</label>
-     <em>  </em><input id="cnumber" name="url" size="25" />
+     <em>  </em><input id="cnumber" name="url" size="25" class="digits" value=""/>
    </p>
    <p>
      <label for="ccomment">Your Comment</label>
-     <em>*</em><textarea id="ccomment" name="comment" cols="22"></textarea>
+     <em>*</em><textarea id="ccomment" name="comment" cols="22" class="required""></textarea>
    </p>
    <p>
      <label for="ccheckbox">Please check this box to agree to our terms</label>
-     <em>*</em><input type="checkbox" name="ccheckbox"></textarea>
+     <em>*</em><input type="checkbox" name="ccheckbox" class="required"></textarea>
    </p>
    <p>
      <input class="submit" type="submit" value="Submit" />
